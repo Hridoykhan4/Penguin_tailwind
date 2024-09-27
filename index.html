@@ -4,63 +4,102 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css' integrity='sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==' crossorigin='anonymous'/>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <style>
+
+      .font{
+        font-family: "Barlow Condensed", system-ui;
+      }
+
+      @media screen and (max-width:768px) {
+       /* Styling for header */
+@media screen and (max-width:768px) {
+   
+    nav ul {
+        position: fixed;
+        left: -200%;
+        padding-left: 1.3rem;
+        color: white;
+        flex-direction: column;
+        font-weight: bold;
+        transition: 0.9s;
+        padding-top: 1rem;
+        background-blend-mode: overlay;
+        top: 2.7rem;
+        gap: 4rem;
+        background-color: rgba(0, 0, 0, 0.8); 
+        width: 100%;
+        height: 60vh;
+        justify-content: start;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+
+      
+      }
+
+    </style>
+
     <title>Penguin_tailwind</title>
   </head>
-  <body>
-    <header class="bg-amber-100 px-6 md:px-32 py-20">
+  <body class="font">
+    <header class="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 px-6 md:px-10 lg:px-32 py-2 md:py-10">
       <!-- Nav Section -->
-      <nav>
-        <div class="flex flex-col justify-between items-center lg:flex-row">
-          <div class="justify-center">
-            <img width="400" src="images/icons/logo.png" alt="" />
+      <nav class="py-4">
+        <div class="flex justify-between items-center lg:flex-row">
+          <!-- Logo -->
+          <div class="">
+           <a href=""> <img width="250" src="images/icons/logo.png" alt="Logo" /></a>
           </div>
 
-          <div class="my-7 md:my-0">
-            <ul class="flex gap-7 flex-col items-center lg:flex-row">
-              <li><a class="font-semibold text-center" href="">Home</a></li>
-              <li><a class="font-semibold text-center" href="">Contact</a></li>
-              <li><a class="font-semibold text-center" href="">About US</a></li>
-              <li><a class="font-semibold text-center" href="">Call Us</a></li>
-            </ul>
-          </div>
+          <input type="checkbox" class="hidden" id="check">
+          <label for="check" class="cursor-pointer md:hidden">
+            <i class="fa-solid fa-bars fa-2x text-gray-700"></i>
+          </label>
+
+     
+          <ul class="flex font-bold md:gap-7 my-7 md:my-0 transform">
+            <li><a class="font-semibold hover:text-red-500 text-white transform hover:scale-150 transition duration-500 ease-in-out text-center" href="">Home</a></li>
+            <li><a class="font-semibold hover:text-red-500 text-white transform hover:scale-150 transition duration-500 ease-in-out text-center" href="">Contact</a></li>
+            <li><a class="font-semibold hover:text-red-500 text-white transform hover:scale-150 transition duration-500 ease-in-out text-center" href="">About Us</a></li>
+            <li><a class="font-semibold hover:text-red-500 text-white transform hover:scale-150 transition duration-500 ease-in-out text-center" href="">Call Us</a></li>
+          </ul>
+          
+
         </div>
       </nav>
 
       <hr
-        class="border-0 h-1 bg-gradient-to-r from-red-500 via-yellow-500 to-green-500"
+        class="border-0 h-2 bg-gradient-to-r from-stone-500 to-stone-700"
       />
 
       <!-- Banner Part -->
       <div class="flex mt-4 flex-col md:flex-row justify-between items-center">
         <div class="space-y-4">
-          <h1 class="text-7xl uppercase">
+          <h1 class="md:text-5xl lg:text-7xl text-4xl uppercase">
             <span class="text-[#FABE4C]">Be the Penguins</span>
             <br />
             <span class="text-[#363958]">OF WINTER </span>
           </h1>
 
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
+          <p class="text-white py-2 rounded-xl font-medium tracking-wide shadow-2xl leading-relaxed">
+            Discover the perfect balance of style and comfort. Elevate your wardrobe with fashion designed for every occasion.
           </p>
-          <button
-            class="py-4 px-8 rounded-xl uppercase text-white bg-gradient-to-r from-green-800 via-purple-500 to-pink-500 font-medium"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="blue"
-              viewBox="0 0 24 24"
-              stroke-width="3.5"
-              stroke="currentColor"
-              class="size-6 me-2 inline"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
-              />
+          
+          <button class="py-4 px-8 rounded-xl uppercase text-white bg-gradient-to-r from-green-800 via-purple-500 to-pink-500 font-medium">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="blue" viewBox="0 0 24 24" stroke-width="3.5" stroke="currentColor" class="size-6 me-2 inline">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"/>
             </svg>
-
             Buy Now
           </button>
         </div>
@@ -70,8 +109,408 @@
       </div>
     </header>
 
-    <main class="max-w-7xl mx-auto">
-      <section class="my-12">
+    <main class="py-12 shadow-sm">
+
+      <!-- Main start -->
+      <div class=" bg-gray-100 min-h-screen ">
+        <div class="container mx-auto flex flex-col lg:flex-row justify-between">
+          <div class="w-3/12 hidden xl:block">
+
+           <div class="bg-white shadow-sm rounded-sm p-4">
+            <h3 class="text-xl font-semibold text-gray-700 mb-3">
+              Categories
+            </h3>
+            <div class="text-gray-700 space-y-2">
+              <a href="#" class="flex items-center font-semibold leading-4 uppercase text-sm hover:text-blue-500 transition ">
+                <span class="mr-2">
+                  <i class="far fa-folder-open"></i>
+                </span>
+                <span>Beauty</span>
+                <span class="ms-auto">(12)</span>
+              </a>
+              <a href="#" class="flex items-center font-semibold leading-4 uppercase text-sm hover:text-blue-500 transition ">
+                <span class="mr-2">
+                  <i class="far fa-folder-open"></i>
+                </span>
+                <span>Business</span>
+                <span class="ms-auto">(14)</span>
+              </a>
+              <a href="#" class="flex items-center font-semibold leading-4 uppercase text-sm hover:text-blue-500 transition ">
+                <span class="mr-2">
+                  <i class="far fa-folder-open"></i>
+                </span>
+                <span>Fashion</span>
+                <span class="ms-auto">(11)</span>
+              </a>
+              <a href="#" class="flex items-center font-semibold leading-4 uppercase text-sm hover:text-blue-500 transition ">
+                <span class="mr-2">
+                  <i class="far fa-folder-open"></i>
+                </span>
+                <span>Food</span>
+                <span class="ms-auto">(2)</span>
+              </a>
+              <a href="#" class="flex items-center font-semibold leading-4 uppercase text-sm hover:text-blue-500 transition ">
+                <span class="mr-2">
+                  <i class="far fa-folder-open"></i>
+                </span>
+                <span>Learn</span>
+                <span class="ms-auto">(6)</span>
+              </a>
+              <a href="#" class="flex items-center font-semibold leading-4 uppercase text-sm hover:text-blue-500 transition ">
+                <span class="mr-2">
+                  <i class="far fa-folder-open"></i>
+                </span>
+                <span>Music</span>
+                <span class="ms-auto">(16)</span>
+              </a>
+              <a href="#" class="flex items-center font-semibold leading-4 uppercase text-sm hover:text-blue-500 transition ">
+                <span class="mr-2">
+                  <i class="far fa-folder-open"></i>
+                </span>
+                <span>Nature</span>
+                <span class="ms-auto">(13)</span>
+              </a>
+              <a href="#" class="flex items-center font-semibold leading-4 uppercase text-sm hover:text-blue-500 transition ">
+                <span class="mr-2">
+                  <i class="far fa-folder-open"></i>
+                </span>
+                <span>People</span>
+                <span class="ms-auto">(13)</span>
+              </a>
+              <a href="#" class="flex items-center font-semibold leading-4 uppercase text-sm hover:text-blue-500 transition ">
+                <span class="mr-2">
+                  <i class="far fa-folder-open"></i>
+                </span>
+                <span>Sports</span>
+                <span class="ms-auto">(3)</span>
+              </a>
+              <a href="#" class="flex items-center font-semibold leading-4 uppercase text-sm hover:text-blue-500 transition ">
+                <span class="mr-2">
+                  <i class="far fa-folder-open"></i>
+                </span>
+                <span>Technology</span>
+                <span class="ms-auto">(4)</span>
+              </a>
+            </div>
+           </div>
+           <div class="bg-white shadow-sm rounded-sm p-4">
+            <h3 class="text-xl font-semibold text-gray-700 mb-3">Random Posts</h3>
+      
+            <div class="space-y-4">
+              <a href="#" class="flex">
+                <div class="flex-shrink-0">
+                  <img src="images/img-1.jpg" class="w-20 h-14 rounded object-cover" alt="">
+              </div>
+              <div class="pl-3 flex-grow">
+                <h5 class="text-md leading-5 font-semibold hover:text-blue-500">
+                  Team Bitbose geared up to attend Blockchain
+                </h5>
+                <div class="flex-text-gray-500 text-sm items-center">
+                  <span class="mr-1 text-xs">
+                    <i class="far fa-clock"></i>
+                  </span>
+                  <span>June 11,2024</span>
+                </div>
+              </div>
+              </a>
+             
+              <a href="#" class="flex">
+                <div class="flex-shrink-0">
+                  <img src="images/img-2.jpg" class="w-20 h-14 rounded object-cover" alt="">
+              </div>
+              <div class="pl-3 flex-grow">
+                <h5 class="text-md leading-5 font-semibold hover:text-blue-500">
+                  After a Carribean Hurricane,the Battle
+                </h5>
+                <div class="flex-text-gray-500 text-sm items-center">
+                  <span class="mr-1 text-xs">
+                    <i class="far fa-clock"></i>
+                  </span>
+                  <span>August 1,2024</span>
+                </div>
+              </div>
+              </a>
+             
+              <a href="#" class="flex">
+                <div class="flex-shrink-0">
+                  <img src="images/img-3.jpg" class="w-20 h-14 rounded object-cover" alt="">
+              </div>
+              <div class="pl-3 flex-grow">
+                <h5 class="text-md leading-5 font-semibold hover:text-blue-500">
+                 California Sheiff deputy shot
+                </h5>
+                <div class="flex-text-gray-500 text-sm items-center">
+                  <span class="mr-1 text-xs">
+                    <i class="far fa-clock"></i>
+                  </span>
+                  <span>April 9,2024</span>
+                </div>
+              </div>
+              </a>
+             
+            </div>
+
+           </div>
+          </div>
+
+          <div class="xl:w-6/12 lg:w-8/12 mx-6">
+            <div class="flex bg-white justify-between px-3 py-2 items-center rounded-sm mb-4">
+              <h5 class="text-base uppercase font-semibold">Business</h5>
+              <a href="#" class="text-white bg-blue-500 px-3 py-1 rounded-sm uppercase text-sm hover:bg-transparent hover:text-blue-500 transition border-blue-500">See More</a>
+            </div>
+
+            <div class="bg-white shadow-sm rounded-sm">
+              <a href="#" class="overflow-hidden block">
+                <img src="images/img-12.jpg" class="w-full transform hover:scale-110 transition duration-500 rounded h-96 object-cover " alt="">
+              </a>
+              <div class="p-4">
+                <a href="#">
+                  <h2 class="text-2xl font-semibold-text-gray-700 hover:text-blue-500 transition">
+                    Shop the latest trends now!
+                  </h2>
+                </a>
+                <p class="text-gray-500 text-sm mt-4">Shop our bestsellers and see why customers love these top-rated products. Hurry—these items are selling out fast!</p>
+                <div class="flex mt-3 space-x-5">
+                  <div class="flex items-center  text-gray-400 text-sm">
+                    <span class="mr-2 text-xs">
+                      <i class="fa-solid fa-user"></i>
+                    </span>
+                    BloggingTips
+                  </div>
+                  <div class="flex items-center text-gray-400 text-sm">
+                    <span class="mr-2 text-xs">
+                      <i class="fa-solid fa-clock"></i>
+                    </span>
+                   June,11,2024
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2 mt-4 gap-4">
+              <div class="bg-white p-4 shadow-sm rounded-sm">
+                <a href="#" class="block overflow-hidden">
+                  <img src="images/img-7.jpg" class="w-full transform hover:scale-110 transition duration-500 rounded h-60 object-cover " alt="">
+                </a>
+
+                <div class="mt-3">
+                  <a href="#" ></a>
+                  <h2 class="text-xl  font-semibold-text-gray-700 hover:text-blue-500 transition">
+                   One-of-a-kind deals are just a click away.
+                  </h2>
+                </a>
+                
+                <div class="flex mt-2 space-x-5 items-center">
+                  <div class="flex items-center text-gray-400 text-sm">
+                    <span class="mr-2 text-xs">
+                      <i class="fa-solid fa-user"></i>
+                    </span>
+                    BloggingTips
+                  </div>
+                  <div class="flex items-center text-gray-400 text-sm">
+                    <span class="mr-2 text-xs">
+                      <i class="fa-solid fa-clock"></i>
+                    </span>
+                   June,11,2024
+                  </div>
+                </div>
+                
+
+                </div>
+              </div>
+              <div class="bg-white p-4 shadow-sm rounded-sm">
+                <a href="#" class="block overflow-hidden">
+                  <img src="images/img-8.jpg" class="w-full transform hover:scale-110 transition duration-500 rounded h-60 object-cover " alt="">
+                </a>
+
+                <div class="mt-3">
+                  <a href="#" ></a>
+                  <h2 class="text-xl  font-semibold-text-gray-700 hover:text-blue-500 transition">
+                   One-of-a-kind deals are just a click away.
+                  </h2>
+                </a>
+                
+                <div class="flex mt-2 space-x-5 items-center">
+                  <div class="flex items-center text-gray-400 text-sm">
+                    <span class="mr-2 text-xs">
+                      <i class="fa-solid fa-user"></i>
+                    </span>
+                    BloggingTips
+                  </div>
+                  <div class="flex items-center text-gray-400 text-sm">
+                    <span class="mr-2 text-xs">
+                      <i class="fa-solid fa-clock"></i>
+                    </span>
+                   June,11,2024
+                  </div>
+                </div>
+                
+
+                </div>
+              </div>
+              <div class="bg-white p-4 shadow-sm rounded-sm">
+                <a href="#" class="block overflow-hidden">
+                  <img src="images/img-9.jpg" class="w-full transform hover:scale-110 transition duration-500 rounded h-60 object-cover " alt="">
+                </a>
+
+                <div class="mt-3">
+                  <a href="#" ></a>
+                  <h2 class="text-xl  font-semibold-text-gray-700 hover:text-blue-500 transition">
+                   One-of-a-kind deals are just a click away.
+                  </h2>
+                </a>
+                
+                <div class="flex mt-2 space-x-5 items-center">
+                  <div class="flex items-center text-gray-400 text-sm">
+                    <span class="mr-2 text-xs">
+                      <i class="fa-solid fa-user"></i>
+                    </span>
+                    BloggingTips
+                  </div>
+                  <div class="flex items-center text-gray-400 text-sm">
+                    <span class="mr-2 text-xs">
+                      <i class="fa-solid fa-clock"></i>
+                    </span>
+                   June,11,2024
+                  </div>
+                </div>
+                
+
+                </div>
+              </div>
+              <div class="bg-white p-4 shadow-sm rounded-sm">
+                <a href="#" class="block overflow-hidden">
+                  <img src="images/img-10.jpg" class="w-full transform hover:scale-110 transition duration-500 rounded h-60 object-cover " alt="">
+                </a>
+
+                <div class="mt-3">
+                  <a href="#" ></a>
+                  <h2 class="text-xl  font-semibold-text-gray-700 hover:text-blue-500 transition">
+                   One-of-a-kind deals are just a click away.
+                  </h2>
+                </a>
+                
+                <div class="flex mt-2 space-x-5 items-center">
+                  <div class="flex items-center text-gray-400 text-sm">
+                    <span class="mr-2 text-xs">
+                      <i class="fa-solid fa-user"></i>
+                    </span>
+                    BloggingTips
+                  </div>
+                  <div class="flex items-center text-gray-400 text-sm">
+                    <span class="mr-2 text-xs">
+                      <i class="fa-solid fa-clock"></i>
+                    </span>
+                   June,11,2024
+                  </div>
+                </div>
+                
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="xl:w-3/12 lg-w-4/4">
+
+            <div class="bg-white shadow-sm rounded-sm p-4">
+              <h3 class="text-xl font-semibold text-gray-700 mb-3">Social Plugin</h3>
+              <div class="flex gap-2">
+                <a href="#" class="w-8 h-8 rounded-sm flex items-center justify-center border text-base border-gray-400">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#" class="w-8 h-8 rounded-sm flex items-center justify-center border text-base border-gray-400">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" class="w-8 h-8 rounded-sm flex items-center justify-center border text-base border-gray-400">
+                  <i class="fa-brands fa-pinterest"></i>
+                </a>
+                <a href="#" class="w-8 h-8 rounded-sm flex items-center justify-center border text-base border-gray-400">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+              </div>
+
+            </div>
+
+           
+
+            <div class="bg-white shadow-sm rounded-sm p-4">
+              <h3 class="text-xl font-semibold text-gray-700 mb-3">Popular Posts</h3>
+        
+              <div class="space-y-4">
+                <a href="#" class="flex">
+                  <div class="flex-shrink-0">
+                    <img src="images/img-1.jpg" class="w-20 h-14 rounded object-cover" alt="">
+                </div>
+                <div class="pl-3 flex-grow">
+                  <h5 class="text-md leading-5 font-semibold hover:text-blue-500">
+                    Team Bitbose geared up to attend Blockchain
+                  </h5>
+                  <div class="flex-text-gray-500 text-sm items-center">
+                    <span class="mr-1 text-xs">
+                      <i class="far fa-clock"></i>
+                    </span>
+                    <span>June 11,2024</span>
+                  </div>
+                </div>
+                </a>
+               
+                <a href="#" class="flex">
+                  <div class="flex-shrink-0">
+                    <img src="images/img-2.jpg" class="w-20 h-14 rounded object-cover" alt="">
+                </div>
+                <div class="pl-3 flex-grow">
+                  <h5 class="text-md leading-5 font-semibold hover:text-blue-500">
+                    After a Carribean Hurricane,the Battle
+                  </h5>
+                  <div class="flex-text-gray-500 text-sm items-center">
+                    <span class="mr-1 text-xs">
+                      <i class="far fa-clock"></i>
+                    </span>
+                    <span>August 1,2024</span>
+                  </div>
+                </div>
+                </a>
+               
+                <a href="#" class="flex">
+                  <div class="flex-shrink-0">
+                    <img src="images/img-3.jpg" class="w-20 h-14 rounded object-cover" alt="">
+                </div>
+                <div class="pl-3 flex-grow">
+                  <h5 class="text-md leading-5 font-semibold hover:text-blue-500">
+                   California Sheiff deputy shot
+                  </h5>
+                  <div class="flex-text-gray-500 text-sm items-center">
+                    <span class="mr-1 text-xs">
+                      <i class="far fa-clock"></i>
+                    </span>
+                    <span>April 9,2024</span>
+                  </div>
+                </div>
+                </a>
+               
+              </div>
+  
+             </div>
+
+             <div class="bg-white shadow-sm rounded-sm p-4 mt-8">
+              <h3 class="text-xl font-semibold text-gray-700 mb-3">Tags</h3> 
+              <div class="flex flex-wrap gap-2">
+                <a href="#" class="px-3 py-1 text-sm border border-gray-200 rounded-sm hover:bg-blue-500 transition hover:text-white">Beauty</a>
+                <a href="#" class="px-3 py-1 text-sm border border-gray-200 rounded-sm hover:bg-blue-500 transition hover:text-white">Sports</a>
+                <a href="#" class="px-3 py-1 text-sm border border-gray-200 rounded-sm hover:bg-blue-500 transition hover:text-white">Business</a>
+                <a href="#" class="px-3 py-1 text-sm border border-gray-200 rounded-sm hover:bg-blue-500 transition hover:text-white">Politics</a>
+                <a href="#" class="px-3 py-1 text-sm border border-gray-200 rounded-sm hover:bg-blue-500 transition hover:text-white">Computer</a>
+                <a href="#" class="px-3 py-1 text-sm border border-gray-200 rounded-sm hover:bg-blue-500 transition hover:text-white">Coding</a>
+                <a href="#" class="px-3 py-1 text-sm border border-gray-200 rounded-sm hover:bg-blue-500 transition hover:text-white">Web Design</a>
+                <a href="#" class="px-3 py-1 text-sm border border-gray-200 rounded-sm hover:bg-blue-500 transition hover:text-white">Web App</a>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="my-12 max-w-7xl mx-auto">
         <h3 class="text-5xl mb-4 text-center md:text-left">Woman Jacket</h3>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -179,7 +618,7 @@
         </div>
       </section>
 
-      <section class="my-14">
+      <section class="my-14 max-w-7xl mx-auto">
         <h1 class="text-4xl font-bold mb-8 text-center md:text-left">
           Men Jacket
         </h1>
