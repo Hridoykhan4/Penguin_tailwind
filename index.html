@@ -12,6 +12,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+<!-- Flowbite CDN -->
+<link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"  rel="stylesheet" />
     <style>
 
       .font{
@@ -52,8 +54,9 @@
 
     <title>Penguin_tailwind</title>
   </head>
+  
   <body class="font">
-    <header class="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 px-6 md:px-10 lg:px-32 py-2 md:py-10">
+    <header class="bg-gradient-to-r from-purple-300 via-gray-400 to-indigo-300  px-6 md:px-10 lg:px-32 py-2 md:py-10">
       <!-- Nav Section -->
       <nav class="py-4">
         <div class="flex justify-between items-center lg:flex-row">
@@ -110,6 +113,18 @@
     </header>
 
     <main class="py-12 shadow-sm">
+
+
+      <!-- Main Video -->
+
+      <div class="container rounded-lg mx-auto px-4">
+        <video 
+          class="w-full h-auto rounded-lg shadow-lg" 
+           muted autoplay loop 
+          src="images/intro.mp4">
+        </video>
+      </div>
+      
 
       <!-- Main start -->
       <div class=" bg-gray-100 min-h-screen ">
@@ -270,8 +285,8 @@
                   </h2>
                 </a>
                 <p class="text-gray-500 text-sm mt-4">Shop our bestsellers and see why customers love these top-rated products. Hurry—these items are selling out fast!</p>
-                <div class="flex mt-3 space-x-5">
-                  <div class="flex items-center  text-gray-400 text-sm">
+                <div class="flex flex-col md:flex-row mt-3 md:space-x-5">
+                  <div class="flex items-center text-gray-400 text-sm">
                     <span class="mr-2 text-xs">
                       <i class="fa-solid fa-user"></i>
                     </span>
@@ -287,7 +302,7 @@
               </div>
             </div>
 
-            <div class="grid grid-cols-2 mt-4 gap-4">
+            <div class="grid md:grid-cols-2 mt-4 gap-4">
               <div class="bg-white p-4 shadow-sm rounded-sm">
                 <a href="#" class="block overflow-hidden">
                   <img src="images/img-7.jpg" class="w-full transform hover:scale-110 transition duration-500 rounded h-60 object-cover " alt="">
@@ -350,7 +365,7 @@
               </div>
               <div class="bg-white p-4 shadow-sm rounded-sm">
                 <a href="#" class="block overflow-hidden">
-                  <img src="images/img-9.jpg" class="w-full transform hover:scale-110 transition duration-500 rounded h-60 object-cover " alt="">
+                  <img src="images/img-9.jpg" class="w-full transform hover:scale-110 transition duration-500  rounded h-60  flex justify-center items-center" alt="">
                 </a>
 
                 <div class="mt-3">
@@ -412,7 +427,7 @@
 
           </div>
 
-          <div class="xl:w-3/12 lg-w-4/4">
+          <div class="xl:w-3/12 lg-w-4/4 px-6 md:px-0">
 
             <div class="bg-white shadow-sm rounded-sm p-4">
               <h3 class="text-xl font-semibold text-gray-700 mb-3">Social Plugin</h3>
@@ -510,7 +525,150 @@
         </div>
       </div>
 
-      <section class="my-12 max-w-7xl mx-auto">
+      <!-- Banner section -->
+      <section>
+        <div style="background-image: url('./images/icons/banner-bg.jpg');" class="bg-cover bg-no-repeat bg-center py-20 md:py-28">
+          <div class="container mx-auto md:px-32 border">
+            <h1 class="md:text-7xl text-xl text-gray-800 capitalize font-medium mb-4">
+              Best Collection for 
+              <br class="hidden md:block">
+              Home Decoration
+            </h1>
+            
+            <p>Discover a curated selection of elegant, stylish, and modern home décor items that blend aesthetics and functionality</p>
+            <div class="mt-12">
+              <a href="#" class="bg-pink-600 border-pink-600 text-white py-3 gont-medium px-8 rounded-md hover:bg-transparent hover:text-pink-600 transition">Shop Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature Section -->
+        <div class="py-16">
+          <div class="w-10/12 mx-auto grid  md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center">
+            <div class="border border-rounded-sm px-3 py-6 flex justify-center items-center gap-6">
+              <img src="images/icons/delivery-van.svg" alt="" class="w-12 h-12 object-contain">
+              <div>
+                <h4 class="capitalize text-lg">Free Shopping</h4>
+                <p class="text-gray-500">Order Over $200</p>
+              </div>
+            </div>
+            <div class="border border-rounded-sm px-3 py-6 flex justify-center items-center gap-6">
+              <img src="images/icons/money-back.svg" alt="" class="w-12 h-12 object-contain">
+              <div>
+                <h4 class="capitalize text-lg">Money Returns</h4>
+                <p class="text-gray-500">30 Days Money return</p>
+              </div>
+            </div>
+            <div class="border border-rounded-sm px-3 py-6 flex justify-center items-center gap-6">
+              <img src="images/icons/service-hours.svg" alt="" class="w-12 h-12 object-contain">
+              <div>
+                <h4 class="capitalize text-lg">24 / 7 Support</h4>
+                <p class="text-gray-500">Customer Support</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+            <div class="px-4 md:px-12 lg:px-24 ">
+              <h2 class="text-2xl text-gray-800 mb-6 uppercase">Shop By Category</h2>
+              <div class="grid grid-cols-1 gap-3 md:grid-cols-3">
+               
+                <div class="relative rounded-sm group overflow-hidden">
+                  <img src="images/category-1.jpg" class="w-full" alt="">
+                  <a href="#" class="absolute inset-0 group-hover:bg-opacity-60 bg-black bg-opacity-40 flex justify-center items-center text-xl text-white ">Bedroom</a>
+                </div>
+                
+               
+                <div class="relative rounded-sm group overflow-hidden">
+                  <img src="images/category-2.jpg" class="w-full" alt="">
+                  <a href="#" class="absolute inset-0 group-hover:bg-opacity-60 bg-black bg-opacity-40 flex justify-center items-center text-xl text-white ">Sofa</a>
+                </div>
+               
+                <div class="relative rounded-sm group overflow-hidden">
+                  <img src="images/category-3.jpg" class="w-full" alt="">
+                  <a href="#" class="absolute inset-0 group-hover:bg-opacity-60 bg-black bg-opacity-40 flex justify-center items-center text-xl text-white ">Office</a>
+                </div>
+               
+                <div class="relative rounded-sm group overflow-hidden">
+                  <img src="images/category-4.jpg" class="w-full" alt="">
+                  <a href="#" class="absolute inset-0 group-hover:bg-opacity-60 bg-black bg-opacity-40 flex justify-center items-center text-xl text-white ">OutDoor</a>
+                </div>
+               
+                <div class="relative rounded-sm group overflow-hidden">
+                  <img src="images/category-5.jpg" class="w-full" alt="">
+                  <a href="#" class="absolute inset-0 group-hover:bg-opacity-60 bg-black bg-opacity-40 flex justify-center items-center text-xl text-white ">Mattress</a>
+                </div>
+               
+                <div class="relative rounded-sm group overflow-hidden">
+                  <img src="images/category-6.jpg" class="w-full" alt="">
+                  <a href="#" class="absolute inset-0 group-hover:bg-opacity-60 bg-black bg-opacity-40 flex justify-center items-center text-xl text-white ">Dinings</a>
+                </div>
+
+              </div>
+            </div>
+        </div>
+      </section>
+
+      <section class="mt-10">
+        
+
+<div id="default-carousel" class="relative w-full" data-carousel="slide">
+  <!-- Carousel wrapper -->
+  <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+       <!-- Item 1 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="images/d-4-mb-puja-hd-26092024_1.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <!-- Item 2 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="images/d-5-mb-puja-hd-26092024_1.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <!-- Item 3 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="images/arman1.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <!-- Item 4 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="images/product2.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <!-- Item 5 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="images/img-12.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+  </div>
+  <!-- Slider indicators -->
+  <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+  </div>
+  <!-- Slider controls -->
+  <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+          </svg>
+          <span class="sr-only">Previous</span>
+      </span>
+  </button>
+  <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+          </svg>
+          <span class="sr-only">Next</span>
+      </span>
+  </button>
+</div>
+
+      </section>
+     
+       
+
+      <!-- <section class="my-12 max-w-7xl mx-auto">
         <h3 class="text-5xl mb-4 text-center md:text-left">Woman Jacket</h3>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -616,8 +774,8 @@
             </div>
           </div>
         </div>
-      </section>
-
+      </section> -->
+<!-- 
       <section class="my-14 max-w-7xl mx-auto">
         <h1 class="text-4xl font-bold mb-8 text-center md:text-left">
           Men Jacket
@@ -727,11 +885,28 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <section class="my-14">
+
+        <div class="mt-4 max-w-6xl mx-auto">
+          <div class="flex flex-col md:flex-row justify-center items-center">
+            <div class="md:w-1/2 flex flex-col gap-6 items-center justify-center">
+              <h3 class="font-bold capitalize tracking-widest text-3xl">armani-casa</h3>
+              <p class="text-xl font-semibold tracking-wider">LIVING IN ELEGANCE AND STYLE</p>
+              <button class=" border border-black border-opacity-20 px-14 py-1 text-gray-400 text-center bg-white "><a href="#">Discover The Collection</a></button>
+            </div>
+  
+            <div class="md:w-1/2 px-2 md:px-0 mt-4 md:mt-0">
+              <video class="w-full" src="images/aesthetic.mp4" autoplay muted></video>
+            </div>
+          </div>
+        </div>
+
+
+
         <!-- Overall Div -->
-        <div
+        <!-- <div
           class="grid grid-cols-1 md:grid-cols-2 max-w-5xl mx-auto gap-10 md:gap-3 items-center"
         >
           <div>
@@ -775,8 +950,73 @@
           <div class="">
             <img src="images/shopping.png" alt="" />
           </div>
+        </div> -->
+
+        <div class="rounded-lg shadow-lg my-10 max-w-[1440px] w-[80%] mx-auto flex flex-row">
+          
+          <div class="lg:w-3/5 w-full  text-gray-100 p-12 bg-gradient-to-r from-black to-purple-900 lg:from-black lg:via-purple-900 lg:to-white rounded-lg ">
+            <div class="lg:w-1/2">
+              <h3 class="text-2xl font-extrabold leading-relaxed mb-4">Subscribe To Get Our Offers first</h3>
+              <p>Fashion is more than just clothing; it's a reflection of identity, creativity, and culture. From timeless classics to bold trends, fashion has the power to express who we are without saying a word....</p>
+              <div class="mt-4">
+                <input type="email" placeholder="Enter Email" class="bg-gray-600 text-gray-200 placeholder-gray-400 px-4 py-3 w-full rounded-lg focus:outline-none mb-4">
+                <button class="bg-red-600 py-3 rounded-lg w-full">Submit</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:w-2/5 w-full lg:flex lg:flex-row hidden">
+            <img src="images/handome.jpg" class="h-full" alt="">
+          </div>
+
         </div>
       </section>
+
+      <!-- Newsletter Section -->
+       <div class="pb-10">
+        <h3 class="text-center font-bold text-2xl mb-4">Subscribe To Our NewsLetter</h3>
+        <div class="flex justify-center items-center">
+          <input type="email" class="border-t-0 w-72 me-2 border-x-0 border-b-2" required placeholder="Enter Your Email">
+          <a href="#" class="bg-black text-white py-2 px-5">Subscribe</a>
+        </div>
+       </div>
+
     </main>
+
+
+    <footer>
+      
+
+<footer class="bg-white rounded-t-lg shadow dark:bg-gray-900">
+  <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+      <div class="sm:flex sm:items-center sm:justify-between">
+          <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+              <img src="images/logo.png" class="h-8 bg-white rounded-xl px-2 py-1" alt="Flowbite Logo" />
+              <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+          </a>
+          <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+              <li>
+                  <a href="#" class="hover:underline me-4 md:me-6">About</a>
+              </li>
+              <li>
+                  <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+              </li>
+              <li>
+                  <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+              </li>
+              <li>
+                  <a href="#" class="hover:underline">Contact</a>
+              </li>
+          </ul>
+      </div>
+      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.</span>
+  </div>
+</footer>
+
+
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
   </body>
 </html>
