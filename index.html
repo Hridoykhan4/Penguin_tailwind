@@ -24,6 +24,7 @@
       href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
       rel="stylesheet"
     />
+
     <style>
       .font {
         font-family: "Barlow Condensed", system-ui;
@@ -64,15 +65,17 @@
     <header
       class="bg-gradient-to-r from-purple-300 via-gray-400 to-indigo-300 px-6 md:px-10 lg:px-32 py-2 md:py-10"
     >
-      <!-- Nav Section -->
-      <nav class="py-4">
+      <!-- Nav Section` -->
+     <nav class="py-4">
         <div class="flex justify-between items-center lg:flex-row">
-          <!-- Logo -->
+  
           <div class="">
             <a href="">
               <img width="250" src="images/icons/logo.png" alt="Logo"
             /></a>
           </div>
+
+
 
           <input type="checkbox" class="hidden" id="check">
           <label for="check" class="cursor-pointer md:hidden">
@@ -83,7 +86,7 @@
           <ul class="flex font-bold md:gap-7 my-7 md:my-0 transform">
             <li>
               <a
-                class="font-semibold hover:text-red-500 text-white transform hover:scale-150 transition duration-500 ease-in-out text-center"
+                class="font-semibold text-gray-700 hover:text-red-500  transform hover:scale-150 transition duration-500 ease-in-out text-center"
                 href=""
                 >Home</a
               >
@@ -113,9 +116,8 @@
         </div>
       </nav>
 
-      <hr class="border-0 h-2 bg-gradient-to-r from-stone-500 to-stone-700" />
+      <hr class="border-0 h-1 bg-gradient-to-r from-stone-500 to-stone-700" />
 
-      <!-- Banner Part -->
       <div class="flex mt-4 flex-col md:flex-row justify-between items-center">
         <div class="space-y-4">
           <h1 class="md:text-5xl lg:text-7xl text-4xl uppercase">
@@ -136,7 +138,7 @@
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              fill="blue"
+              fill="green"
               viewBox="0 0 24 24"
               stroke-width="2"
               stroke="currentColor"
@@ -152,99 +154,123 @@
           </button>
         </div>
         <div>
-          <img class="mt-5 lg:mt-0" src="images/model.png" alt="" />
+          <img class="" src="images/model.png" alt="" />
         </div>
       </div>
     </header>
 
     <main class="py-12 shadow-sm">
-
-
       <!-- Main Video -->
 
-      <div class="container rounded-lg mx-auto px-4">
+       <div class="container rounded-lg mx-auto px-4">
         <video 
-          class="w-full h-auto rounded-lg shadow-lg" 
-           muted autoplay loop 
-          src="images/intro.mp4">
+          class="w-full h-auto rounded-lg" 
+           autoplay muted loop
+          src="images/intro.mp4" alt="video-loading">
         </video>
       </div>
       
 
       <!-- Main start -->
-      <div class=" bg-gray-100 min-h-screen ">
-        <div class="container mx-auto flex flex-col lg:flex-row justify-between">
-          <div class="w-3/12 hidden xl:block">
-
-           <div class="bg-white shadow-sm rounded-sm p-4">
-            <h3 class="text-xl font-semibold text-gray-700 mb-3">
-              Categories
-            </h3>
+      <div class="container mx-auto flex flex-col lg:flex-row justify-between">
+         <div class="w-3/12 hidden xl:block">
+          <div class="bg-white shadow-sm rounded-sm p-4">
+            <h3 class="text-xl font-semibold text-gray-700 mb-3">Categories</h3>
             <div class="text-gray-700 space-y-2">
-              <a href="#" class="flex items-center font-semibold leading-4 uppercase text-sm hover:text-blue-500 transition ">
+              <a
+                href="#"
+                class="flex items-center font-semibold leading-4 uppercase text-sm hover:text-blue-500 transition"
+              >
                 <span class="mr-2">
                   <i class="far fa-folder-open"></i>
                 </span>
                 <span>Beauty</span>
                 <span class="ms-auto">(12)</span>
               </a>
-              <a href="#" class="flex items-center font-semibold leading-4 uppercase text-sm hover:text-blue-500 transition ">
+              <a
+                href="#"
+                class="flex items-center font-semibold leading-4 uppercase text-sm hover:text-blue-500 transition"
+              >
                 <span class="mr-2">
                   <i class="far fa-folder-open"></i>
                 </span>
                 <span>Business</span>
                 <span class="ms-auto">(14)</span>
               </a>
-              <a href="#" class="flex items-center font-semibold leading-4 uppercase text-sm hover:text-blue-500 transition ">
+              <a
+                href="#"
+                class="flex items-center font-semibold leading-4 uppercase text-sm hover:text-blue-500 transition"
+              >
                 <span class="mr-2">
                   <i class="far fa-folder-open"></i>
                 </span>
                 <span>Fashion</span>
                 <span class="ms-auto">(11)</span>
               </a>
-              <a href="#" class="flex items-center font-semibold leading-4 uppercase text-sm hover:text-blue-500 transition ">
+              <a
+                href="#"
+                class="flex items-center font-semibold leading-4 uppercase text-sm hover:text-blue-500 transition"
+              >
                 <span class="mr-2">
                   <i class="far fa-folder-open"></i>
                 </span>
                 <span>Food</span>
                 <span class="ms-auto">(2)</span>
               </a>
-              <a href="#" class="flex items-center font-semibold leading-4 uppercase text-sm hover:text-blue-500 transition ">
+              <a
+                href="#"
+                class="flex items-center font-semibold leading-4 uppercase text-sm hover:text-blue-500 transition"
+              >
                 <span class="mr-2">
                   <i class="far fa-folder-open"></i>
                 </span>
                 <span>Learn</span>
                 <span class="ms-auto">(6)</span>
               </a>
-              <a href="#" class="flex items-center font-semibold leading-4 uppercase text-sm hover:text-blue-500 transition ">
+              <a
+                href="#"
+                class="flex items-center font-semibold leading-4 uppercase text-sm hover:text-blue-500 transition"
+              >
                 <span class="mr-2">
                   <i class="far fa-folder-open"></i>
                 </span>
                 <span>Music</span>
                 <span class="ms-auto">(16)</span>
               </a>
-              <a href="#" class="flex items-center font-semibold leading-4 uppercase text-sm hover:text-blue-500 transition ">
+              <a
+                href="#"
+                class="flex items-center font-semibold leading-4 uppercase text-sm hover:text-blue-500 transition"
+              >
                 <span class="mr-2">
                   <i class="far fa-folder-open"></i>
                 </span>
                 <span>Nature</span>
                 <span class="ms-auto">(13)</span>
               </a>
-              <a href="#" class="flex items-center font-semibold leading-4 uppercase text-sm hover:text-blue-500 transition ">
+              <a
+                href="#"
+                class="flex items-center font-semibold leading-4 uppercase text-sm hover:text-blue-500 transition"
+              >
                 <span class="mr-2">
                   <i class="far fa-folder-open"></i>
                 </span>
                 <span>People</span>
                 <span class="ms-auto">(13)</span>
               </a>
-              <a href="#" class="flex items-center font-semibold leading-4 uppercase text-sm hover:text-blue-500 transition ">
+              <a
+                href="#"
+                class="flex items-center font-semibold leading-4 uppercase text-sm hover:text-blue-500 transition"
+              >
                 <span class="mr-2">
                   <i class="far fa-folder-open"></i>
                 </span>
                 <span>Sports</span>
                 <span class="ms-auto">(3)</span>
               </a>
-              <a href="#" class="flex items-center font-semibold leading-4 uppercase text-sm hover:text-blue-500 transition ">
+              <a
+                href="#"
+                class="flex items-center font-semibold leading-4 uppercase text-sm hover:text-blue-500 transition"
+              >
                 <span class="mr-2">
                   <i class="far fa-folder-open"></i>
                 </span>
@@ -252,70 +278,89 @@
                 <span class="ms-auto">(4)</span>
               </a>
             </div>
-           </div>
-           <div class="bg-white shadow-sm rounded-sm p-4">
-            <h3 class="text-xl font-semibold text-gray-700 mb-3">Random Posts</h3>
-      
+          </div>
+
+          <div class="bg-white shadow-sm rounded-sm p-4">
+            <h3 class="text-xl font-semibold text-gray-700 mb-3">
+              Random Posts
+            </h3>
+
             <div class="space-y-4">
               <a href="#" class="flex">
                 <div class="flex-shrink-0">
-                  <img src="images/img-1.jpg" class="w-20 h-14 rounded object-cover" alt="">
-              </div>
-              <div class="pl-3 flex-grow">
-                <h5 class="text-md leading-5 font-semibold hover:text-blue-500">
-                  Team Bitbose geared up to attend Blockchain
-                </h5>
-                <div class="flex-text-gray-500 text-sm items-center">
-                  <span class="mr-1 text-xs">
-                    <i class="far fa-clock"></i>
-                  </span>
-                  <span>June 11,2024</span>
+                  <img
+                    src="images/img-1.jpg"
+                    class="w-20 h-14 rounded object-cover"
+                    alt=""
+                  />
                 </div>
-              </div>
+                <div class="pl-3 flex-grow">
+                  <h5
+                    class="text-md leading-5 font-semibold hover:text-blue-500"
+                  >
+                    Team Bitbose geared up to attend Blockchain
+                  </h5>
+                  <div class="flex-text-gray-500 text-sm items-center">
+                    <span class="mr-1 text-xs">
+                      <i class="far fa-clock"></i>
+                    </span>
+                    <span>June 11,2024</span>
+                  </div>
+                </div>
               </a>
-             
+
               <a href="#" class="flex">
                 <div class="flex-shrink-0">
-                  <img src="images/img-2.jpg" class="w-20 h-14 rounded object-cover" alt="">
-              </div>
-              <div class="pl-3 flex-grow">
-                <h5 class="text-md leading-5 font-semibold hover:text-blue-500">
-                  After a Carribean Hurricane,the Battle
-                </h5>
-                <div class="flex-text-gray-500 text-sm items-center">
-                  <span class="mr-1 text-xs">
-                    <i class="far fa-clock"></i>
-                  </span>
-                  <span>August 1,2024</span>
+                  <img
+                    src="images/img-2.jpg"
+                    class="w-20 h-14 rounded object-cover"
+                    alt=""
+                  />
                 </div>
-              </div>
+                <div class="pl-3 flex-grow">
+                  <h5
+                    class="text-md leading-5 font-semibold hover:text-blue-500"
+                  >
+                    After a Carribean Hurricane,the Battle
+                  </h5>
+                  <div class="flex-text-gray-500 text-sm items-center">
+                    <span class="mr-1 text-xs">
+                      <i class="far fa-clock"></i>
+                    </span>
+                    <span>August 1,2024</span>
+                  </div>
+                </div>
               </a>
-             
+
               <a href="#" class="flex">
                 <div class="flex-shrink-0">
-                  <img src="images/img-3.jpg" class="w-20 h-14 rounded object-cover" alt="">
-              </div>
-              <div class="pl-3 flex-grow">
-                <h5 class="text-md leading-5 font-semibold hover:text-blue-500">
-                 California Sheiff deputy shot
-                </h5>
-                <div class="flex-text-gray-500 text-sm items-center">
-                  <span class="mr-1 text-xs">
-                    <i class="far fa-clock"></i>
-                  </span>
-                  <span>April 9,2024</span>
+                  <img
+                    src="images/img-3.jpg"
+                    class="w-20 h-14 rounded object-cover"
+                    alt=""
+                  />
                 </div>
-              </div>
+                <div class="pl-3 flex-grow">
+                  <h5
+                    class="text-md leading-5 font-semibold hover:text-blue-500"
+                  >
+                    California Sheiff deputy shot
+                  </h5>
+                  <div class="flex-text-gray-500 text-sm items-center">
+                    <span class="mr-1 text-xs">
+                      <i class="far fa-clock"></i>
+                    </span>
+                    <span>April 9,2024</span>
+                  </div>
+                </div>
               </a>
-             
             </div>
-
-           </div>
           </div>
+        </div>
 
-          <div class="xl:w-6/12 lg:w-8/12 mx-6">
+         <div class="xl:w-6/12 lg:w-8/12 mx-6">
             <div class="flex bg-white justify-between px-3 py-2 items-center rounded-sm mb-4">
-              <h5 class="text-base uppercase font-semibold">Business</h5>
+              <h5 class=" uppercase font-semibold">Business</h5>
               <a href="#" class="text-white bg-blue-500 px-3 py-1 rounded-sm uppercase text-sm hover:bg-transparent hover:text-blue-500 transition border-blue-500">See More</a>
             </div>
 
@@ -329,7 +374,7 @@
                     Shop the latest trends now!
                   </h2>
                 </a>
-                <p class="text-gray-500 text-sm mt-4">Shop our bestsellers and see why customers love these top-rated products. Hurry—these items are selling out fast!</p>
+                <p class="text-gray-500 text-sm mt-3">Shop our bestsellers and see why customers love these top-rated products. Hurry—these items are selling out fast!</p>
                 <div class="flex flex-col md:flex-row mt-3 md:space-x-5">
                   <div class="flex items-center text-gray-400 text-sm">
                     <span class="mr-2 text-xs">
@@ -378,6 +423,7 @@
 
                 </div>
               </div>
+
               <div class="bg-white p-4 shadow-sm rounded-sm">
                 <a href="#" class="block overflow-hidden">
                   <img src="images/img-8.jpg" class="w-full transform hover:scale-110 transition duration-500 rounded h-60 object-cover " alt="">
@@ -404,10 +450,10 @@
                    June,11,2024
                   </div>
                 </div>
-                
-
-                </div>
               </div>
+
+              </div>
+
               <div class="bg-white p-4 shadow-sm rounded-sm">
                 <a href="#" class="block overflow-hidden">
                   <img src="images/img-9.jpg" class="w-full transform hover:scale-110 transition duration-500  rounded h-60  flex justify-center items-center" alt="">
@@ -438,6 +484,7 @@
 
                 </div>
               </div>
+
               <div class="bg-white p-4 shadow-sm rounded-sm">
                 <a href="#" class="block overflow-hidden">
                   <img src="images/img-10.jpg" class="w-full transform hover:scale-110 transition duration-500 rounded h-60 object-cover " alt="">
@@ -468,43 +515,62 @@
 
                 </div>
               </div>
+              
             </div>
 
           </div>
 
-          <div class="xl:w-3/12 lg-w-4/4 px-6 md:px-0">
-
-            <div class="bg-white shadow-sm rounded-sm p-4">
-              <h3 class="text-xl font-semibold text-gray-700 mb-3">Social Plugin</h3>
-              <div class="flex gap-2">
-                <a href="#" class="w-8 h-8 rounded-sm flex items-center justify-center border text-base border-gray-400">
-                  <i class="fa-brands fa-twitter"></i>
-                </a>
-                <a href="#" class="w-8 h-8 rounded-sm flex items-center justify-center border text-base border-gray-400">
-                  <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="#" class="w-8 h-8 rounded-sm flex items-center justify-center border text-base border-gray-400">
-                  <i class="fa-brands fa-pinterest"></i>
-                </a>
-                <a href="#" class="w-8 h-8 rounded-sm flex items-center justify-center border text-base border-gray-400">
-                  <i class="fa-brands fa-linkedin"></i>
-                </a>
-              </div>
-
+        <div class="xl:w-3/12 lg:w-4/12 px-6 md:px-0">
+          <div class="bg-white shadow-sm rounded-sm p-4">
+            <h3 class="text-xl font-semibold text-gray-700 mb-3">
+              Social Plugin
+            </h3>
+            <div class="flex gap-2">
+              <a
+                href="#"
+                class="w-8 h-8 rounded-sm flex items-center justify-center border text-base border-gray-400"
+              >
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a
+                href="#"
+                class="w-8 h-8 rounded-sm flex items-center justify-center border text-base border-gray-400"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a
+                href="#"
+                class="w-8 h-8 rounded-sm flex items-center justify-center border text-base border-gray-400"
+              >
+                <i class="fa-brands fa-pinterest"></i>
+              </a>
+              <a
+                href="#"
+                class="w-8 h-8 rounded-sm flex items-center justify-center border text-base border-gray-400"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
             </div>
+          </div>
 
-           
+          <div class="bg-white shadow-sm rounded-sm p-4">
+            <h3 class="text-xl font-semibold text-gray-700 mb-3">
+              Popular Posts
+            </h3>
 
-            <div class="bg-white shadow-sm rounded-sm p-4">
-              <h3 class="text-xl font-semibold text-gray-700 mb-3">Popular Posts</h3>
-        
-              <div class="space-y-4">
-                <a href="#" class="flex">
-                  <div class="flex-shrink-0">
-                    <img src="images/img-1.jpg" class="w-20 h-14 rounded object-cover" alt="">
+            <div class="space-y-4">
+              <a href="#" class="flex">
+                <div class="flex-shrink-0">
+                  <img
+                    src="images/img-1.jpg"
+                    class="w-20 h-14 rounded object-cover"
+                    alt=""
+                  />
                 </div>
                 <div class="pl-3 flex-grow">
-                  <h5 class="text-md leading-5 font-semibold hover:text-blue-500">
+                  <h5
+                    class="text-md leading-5 font-semibold hover:text-blue-500"
+                  >
                     Team Bitbose geared up to attend Blockchain
                   </h5>
                   <div class="flex-text-gray-500 text-sm items-center">
@@ -514,14 +580,20 @@
                     <span>June 11,2024</span>
                   </div>
                 </div>
-                </a>
-               
-                <a href="#" class="flex">
-                  <div class="flex-shrink-0">
-                    <img src="images/img-2.jpg" class="w-20 h-14 rounded object-cover" alt="">
+              </a>
+
+              <a href="#" class="flex">
+                <div class="flex-shrink-0">
+                  <img
+                    src="images/img-2.jpg"
+                    class="w-20 h-14 rounded object-cover"
+                    alt=""
+                  />
                 </div>
                 <div class="pl-3 flex-grow">
-                  <h5 class="text-md leading-5 font-semibold hover:text-blue-500">
+                  <h5
+                    class="text-md leading-5 font-semibold hover:text-blue-500"
+                  >
                     After a Carribean Hurricane,the Battle
                   </h5>
                   <div class="flex-text-gray-500 text-sm items-center">
@@ -531,15 +603,21 @@
                     <span>August 1,2024</span>
                   </div>
                 </div>
-                </a>
-               
-                <a href="#" class="flex">
-                  <div class="flex-shrink-0">
-                    <img src="images/img-3.jpg" class="w-20 h-14 rounded object-cover" alt="">
+              </a>
+
+              <a href="#" class="flex">
+                <div class="flex-shrink-0">
+                  <img
+                    src="images/img-3.jpg"
+                    class="w-20 h-14 rounded object-cover"
+                    alt=""
+                  />
                 </div>
                 <div class="pl-3 flex-grow">
-                  <h5 class="text-md leading-5 font-semibold hover:text-blue-500">
-                   California Sheiff deputy shot
+                  <h5
+                    class="text-md leading-5 font-semibold hover:text-blue-500"
+                  >
+                    California Sheiff deputy shot
                   </h5>
                   <div class="flex-text-gray-500 text-sm items-center">
                     <span class="mr-1 text-xs">
@@ -548,64 +626,125 @@
                     <span>April 9,2024</span>
                   </div>
                 </div>
-                </a>
-               
-              </div>
-  
-             </div>
+              </a>
+            </div>
+          </div>
 
-             <div class="bg-white shadow-sm rounded-sm p-4 mt-8">
-              <h3 class="text-xl font-semibold text-gray-700 mb-3">Tags</h3> 
-              <div class="flex flex-wrap gap-2">
-                <a href="#" class="px-3 py-1 text-sm border border-gray-200 rounded-sm hover:bg-blue-500 transition hover:text-white">Beauty</a>
-                <a href="#" class="px-3 py-1 text-sm border border-gray-200 rounded-sm hover:bg-blue-500 transition hover:text-white">Sports</a>
-                <a href="#" class="px-3 py-1 text-sm border border-gray-200 rounded-sm hover:bg-blue-500 transition hover:text-white">Business</a>
-                <a href="#" class="px-3 py-1 text-sm border border-gray-200 rounded-sm hover:bg-blue-500 transition hover:text-white">Politics</a>
-                <a href="#" class="px-3 py-1 text-sm border border-gray-200 rounded-sm hover:bg-blue-500 transition hover:text-white">Computer</a>
-                <a href="#" class="px-3 py-1 text-sm border border-gray-200 rounded-sm hover:bg-blue-500 transition hover:text-white">Coding</a>
-                <a href="#" class="px-3 py-1 text-sm border border-gray-200 rounded-sm hover:bg-blue-500 transition hover:text-white">Web Design</a>
-                <a href="#" class="px-3 py-1 text-sm border border-gray-200 rounded-sm hover:bg-blue-500 transition hover:text-white">Web App</a>
-              </div>
+          <div class="bg-white shadow-sm rounded-sm p-4 mt-8">
+            <h3 class="text-xl font-semibold text-gray-700 mb-3">Tags</h3>
+            <div class="flex flex-wrap gap-2">
+              <a
+                href="#"
+                class="px-3 py-1 text-sm border border-gray-200 rounded-sm hover:bg-blue-500 transition hover:text-white"
+                >Beauty</a
+              >
+              <a
+                href="#"
+                class="px-3 py-1 text-sm border border-gray-200 rounded-sm hover:bg-blue-500 transition hover:text-white"
+                >Sports</a
+              >
+              <a
+                href="#"
+                class="px-3 py-1 text-sm border border-gray-200 rounded-sm hover:bg-blue-500 transition hover:text-white"
+                >Business</a
+              >
+              <a
+                href="#"
+                class="px-3 py-1 text-sm border border-gray-200 rounded-sm hover:bg-blue-500 transition hover:text-white"
+                >Politics</a
+              >
+              <a
+                href="#"
+                class="px-3 py-1 text-sm border border-gray-200 rounded-sm hover:bg-blue-500 transition hover:text-white"
+                >Computer</a
+              >
+              <a
+                href="#"
+                class="px-3 py-1 text-sm border border-gray-200 rounded-sm hover:bg-blue-500 transition hover:text-white"
+                >Coding</a
+              >
+              <a
+                href="#"
+                class="px-3 py-1 text-sm border border-gray-200 rounded-sm hover:bg-blue-500 transition hover:text-white"
+                >Web Design</a
+              >
+              <a
+                href="#"
+                class="px-3 py-1 text-sm border border-gray-200 rounded-sm hover:bg-blue-500 transition hover:text-white"
+                >Web App</a
+              >
+            </div>
           </div>
         </div>
       </div>
 
       <!-- Banner section -->
-      <section>
-        <div style="background-image: url('./images/icons/banner-bg.jpg');" class="bg-cover bg-no-repeat bg-center py-20 md:py-28">
-          <div class="container mx-auto md:px-32 border">
-            <h1 class="md:text-7xl text-xl text-gray-800 capitalize font-medium mb-4">
-              Best Collection for 
-              <br class="hidden md:block">
+       <section>
+        <div
+          style="background-image: url('./images/icons/banner-bg.jpg')"
+          class="bg-cover bg-no-repeat bg-center py-20 md:py-28"
+        >
+          <div class="container mx-auto md:px-32">
+            <h1
+              class="md:text-7xl text-xl text-gray-800 capitalize font-medium mb-4"
+            >
+              Best Collection for
+              <br class="hidden md:block" />
               Home Decoration
             </h1>
-            
-            <p>Discover a curated selection of elegant, stylish, and modern home décor items that blend aesthetics and functionality</p>
+
+            <p>
+              Discover a curated selection of elegant, stylish, and modern home
+              décor items that blend aesthetics and functionality
+            </p>
             <div class="mt-12">
-              <a href="#" class="bg-pink-600 border-pink-600 text-white py-3 gont-medium px-8 rounded-md hover:bg-transparent hover:text-pink-600 transition">Shop Now</a>
+              <a
+                href="#"
+                class="bg-pink-600 border-pink-600 text-white py-3 gont-medium px-8 rounded-md hover:bg-transparent hover:text-pink-600 transition"
+                >Shop Now</a
+              >
             </div>
           </div>
         </div>
 
-        <!-- Feature Section -->
         <div class="py-16">
-          <div class="w-10/12 mx-auto grid  md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center">
-            <div class="border border-rounded-sm px-3 py-6 flex justify-center items-center gap-6">
-              <img src="images/icons/delivery-van.svg" alt="" class="w-12 h-12 object-contain">
+          <div
+            class="w-11/12 mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center"
+          >
+            <div
+              class="border px-3 py-6 flex justify-center items-center gap-6"
+            >
+              <img
+                src="images/icons/delivery-van.svg"
+                alt=""
+                class="w-12 h-12 object-contain"
+              />
               <div>
                 <h4 class="capitalize text-lg">Free Shopping</h4>
                 <p class="text-gray-500">Order Over $200</p>
               </div>
             </div>
-            <div class="border border-rounded-sm px-3 py-6 flex justify-center items-center gap-6">
-              <img src="images/icons/money-back.svg" alt="" class="w-12 h-12 object-contain">
+            <div
+              class="border px-3 py-6 flex justify-center items-center gap-6"
+            >
+              <img
+                src="images/icons/money-back.svg"
+                alt=""
+                class="w-12 h-12 object-contain"
+              />
               <div>
                 <h4 class="capitalize text-lg">Money Returns</h4>
                 <p class="text-gray-500">30 Days Money return</p>
               </div>
             </div>
-            <div class="border border-rounded-sm px-3 py-6 flex justify-center items-center gap-6">
-              <img src="images/icons/service-hours.svg" alt="" class="w-12 h-12 object-contain">
+            <div
+              class="border px-3 py-6 flex justify-center items-center gap-6"
+            >
+              <img
+                src="images/icons/service-hours.svg"
+                alt=""
+                class="w-12 h-12 object-contain"
+              />
               <div>
                 <h4 class="capitalize text-lg">24 / 7 Support</h4>
                 <p class="text-gray-500">Customer Support</p>
@@ -615,172 +754,353 @@
         </div>
 
         <div>
-            <div class="px-4 md:px-12 lg:px-24 ">
-              <h2 class="text-2xl text-gray-800 mb-6 uppercase">Shop By Category</h2>
-              <div class="grid grid-cols-1 gap-3 md:grid-cols-3">
-               
-                <div class="relative rounded-sm group overflow-hidden">
-                  <img src="images/category-1.jpg" class="w-full" alt="">
-                  <a href="#" class="absolute inset-0 group-hover:bg-opacity-60 bg-black bg-opacity-40 flex justify-center items-center text-xl text-white ">Bedroom</a>
-                </div>
-                
-               
-                <div class="relative rounded-sm group overflow-hidden">
-                  <img src="images/category-2.jpg" class="w-full" alt="">
-                  <a href="#" class="absolute inset-0 group-hover:bg-opacity-60 bg-black bg-opacity-40 flex justify-center items-center text-xl text-white ">Sofa</a>
-                </div>
-               
-                <div class="relative rounded-sm group overflow-hidden">
-                  <img src="images/category-3.jpg" class="w-full" alt="">
-                  <a href="#" class="absolute inset-0 group-hover:bg-opacity-60 bg-black bg-opacity-40 flex justify-center items-center text-xl text-white ">Office</a>
-                </div>
-               
-                <div class="relative rounded-sm group overflow-hidden">
-                  <img src="images/category-4.jpg" class="w-full" alt="">
-                  <a href="#" class="absolute inset-0 group-hover:bg-opacity-60 bg-black bg-opacity-40 flex justify-center items-center text-xl text-white ">OutDoor</a>
-                </div>
-               
-                <div class="relative rounded-sm group overflow-hidden">
-                  <img src="images/category-5.jpg" class="w-full" alt="">
-                  <a href="#" class="absolute inset-0 group-hover:bg-opacity-60 bg-black bg-opacity-40 flex justify-center items-center text-xl text-white ">Mattress</a>
-                </div>
-               
-                <div class="relative rounded-sm group overflow-hidden">
-                  <img src="images/category-6.jpg" class="w-full" alt="">
-                  <a href="#" class="absolute inset-0 group-hover:bg-opacity-60 bg-black bg-opacity-40 flex justify-center items-center text-xl text-white ">Dinings</a>
-                </div>
+          <div class="px-4 md:px-12 lg:px-24">
+            <h2 class="text-2xl text-gray-800 mb-6 uppercase">
+              Shop By Category
+            </h2>
+            <div class="grid grid-cols-1 gap-3 md:grid-cols-3">
+              <div class="relative rounded-sm group overflow-hidden">
+                <img src="images/category-1.jpg" class="w-full" alt="" />
+                <a
+                  href="#"
+                  class="absolute inset-0 group-hover:bg-opacity-60 bg-black bg-opacity-40 flex justify-center items-center text-xl text-white"
+                  >Bedroom</a
+                >
+              </div>
 
+              <div class="relative rounded-sm group overflow-hidden">
+                <img src="images/category-2.jpg" class="w-full" alt="" />
+                <a
+                  href="#"
+                  class="absolute inset-0 group-hover:bg-opacity-60 bg-black bg-opacity-40 flex justify-center items-center text-xl text-white"
+                  >Sofa</a
+                >
+              </div>
+
+              <div class="relative rounded-sm group overflow-hidden">
+                <img src="images/category-3.jpg" class="w-full" alt="" />
+                <a
+                  href="#"
+                  class="absolute inset-0 group-hover:bg-opacity-60 bg-black bg-opacity-40 flex justify-center items-center text-xl text-white"
+                  >Office</a
+                >
+              </div>
+
+              <div class="relative rounded-sm group overflow-hidden">
+                <img src="images/category-4.jpg" class="w-full" alt="" />
+                <a
+                  href="#"
+                  class="absolute inset-0 group-hover:bg-opacity-60 bg-black bg-opacity-40 flex justify-center items-center text-xl text-white"
+                  >OutDoor</a
+                >
+              </div>
+
+              <div class="relative rounded-sm group overflow-hidden">
+                <img src="images/category-5.jpg" class="w-full" alt="" />
+                <a
+                  href="#"
+                  class="absolute inset-0 group-hover:bg-opacity-60 bg-black bg-opacity-40 flex justify-center items-center text-xl text-white"
+                  >Mattress</a
+                >
+              </div>
+
+              <div class="relative rounded-sm group overflow-hidden">
+                <img src="images/category-6.jpg" class="w-full" alt="" />
+                <a
+                  href="#"
+                  class="absolute inset-0 group-hover:bg-opacity-60 bg-black bg-opacity-40 flex justify-center items-center text-xl text-white"
+                  >Dining</a
+                >
               </div>
             </div>
+          </div>
         </div>
       </section>
 
-      <section class="mt-10">
-        
 
-<div id="default-carousel" class="relative w-full" data-carousel="slide">
-  <!-- Carousel wrapper -->
-  <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-       <!-- Item 1 -->
-      <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="images/d-4-mb-puja-hd-26092024_1.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-      </div>
-      <!-- Item 2 -->
-      <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="images/d-5-mb-puja-hd-26092024_1.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-      </div>
-      <!-- Item 3 -->
-      <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="images/arman1.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-      </div>
-      <!-- Item 4 -->
-      <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="images/product2.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-      </div>
-      <!-- Item 5 -->
-      <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="images/img-12.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-      </div>
-  </div>
-  <!-- Slider indicators -->
-  <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-      <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
-  </div>
-  <!-- Slider controls -->
-  <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-          <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-          </svg>
-          <span class="sr-only">Previous</span>
-      </span>
-  </button>
-  <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-          <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-          </svg>
-          <span class="sr-only">Next</span>
-      </span>
-  </button>
-</div>
 
+
+
+
+
+
+
+
+
+
+        <section class="mt-10">
+        <div
+          id="default-carousel"
+          class="relative w-full"
+          data-carousel="slide"
+        >
+          <div class="relative h-60 overflow-hidden rounded-lg md:h-96">
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="images/d-4-mb-puja-hd-26092024_1.webp"
+                class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
+            </div>
+
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="images/d-5-mb-puja-hd-26092024_1.webp"
+                class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
+            </div>
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="images/arman1.webp"
+                class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
+            </div>
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="images/product2.jpg"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
+            </div>
+            <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+              <img
+                src="images/img-12.jpg"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
+            </div>
+          </div>
+          <div
+            class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse"
+          >
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="true"
+              aria-label="Slide 1"
+              data-carousel-slide-to="0"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 2"
+              data-carousel-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 3"
+              data-carousel-slide-to="2"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 4"
+              data-carousel-slide-to="3"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 5"
+              data-carousel-slide-to="4"
+            ></button>
+          </div>
+          <button
+            type="button"
+            class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-prev
+          >
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+            >
+              <svg
+                class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 1 1 5l4 4"
+                />
+              </svg>
+              <span class="sr-only">Previous</span>
+            </span>
+          </button>
+          <button
+            type="button"
+            class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-next
+          >
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+            >
+              <svg
+                class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 9 4-4-4-4"
+                />
+              </svg>
+              <span class="sr-only">Next</span>
+            </span>
+          </button>
+        </div>
       </section>
 
-        <section class="my-12 max-w-7xl mx-auto">
-        <h3 class="md:text-5xl text-3xl mb-4 text-center md:text-left">Woman Jacket</h3>
+      <section class="my-12 max-w-7xl mx-auto">
+        <h3 class="md:text-5xl text-3xl mb-4 text-center md:text-left">
+          Woman Jacket
+        </h3>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-
-          <!-- First Product Box -->
-          <div class="space-y-2 shadow-xl p-5 border border-gray-300 rounded-lg hover:shadow-2xl transition-shadow duration-300">
+          <div
+            class="space-y-2 shadow-xl p-5 border border-gray-300 rounded-lg hover:shadow-2xl transition-shadow duration-300"
+          >
             <div class="bg-gray-100 py-4 rounded-lg">
-              <img src="images/jacket-1.png" class="w-3/5 max-w-full mx-auto" alt="Yellow Winter Jacket" />
+              <img
+                src="images/jacket-1.png"
+                class="w-3/5 max-w-full mx-auto"
+                alt="Yellow Winter Jacket"
+              />
             </div>
             <h3 class="text-2xl font-semibold">Sleek Yellow Winter Jacket</h3>
-            <p class="text-lg text-gray-700">A stylish and warm jacket, perfect for those cold winter mornings. Crafted from high-quality fabric for ultimate comfort.</p>
+            <p class="text-lg text-gray-700">
+              A stylish and warm jacket, perfect for those cold winter mornings.
+              Crafted from high-quality fabric for ultimate comfort.
+            </p>
             <div class="flex justify-between items-center">
               <h3 class="font-black text-3xl text-orange-400">$249</h3>
-              <button class="py-3 px-6 rounded-full uppercase text-white bg-gradient-to-r from-green-700 via-purple-600 to-pink-500 font-semibold">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-6 h-6 inline">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"/>
-                </svg> Buy Now
+              <button
+                class="py-3 px-6 rounded-full uppercase text-white bg-gradient-to-r from-green-700 via-purple-600 to-pink-500 font-semibold"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="3"
+                  stroke="currentColor"
+                  class="w-6 h-6 inline"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                  />
+                </svg>
+                Buy Now
               </button>
             </div>
           </div>
-        
-          <!-- Second Product Box -->
-          <div class="space-y-2 shadow-xl p-5 border border-gray-300 rounded-lg hover:shadow-2xl transition-shadow duration-300">
+
+          <div
+            class="space-y-2 shadow-xl p-5 border border-gray-300 rounded-lg hover:shadow-2xl transition-shadow duration-300"
+          >
             <div class="bg-gray-100 py-4 rounded-lg">
-              <img src="images/jacket-2.png" class="w-3/5 max-w-full mx-auto" alt="Green Outdoor Jacket" />
+              <img
+                src="images/jacket-2.png"
+                class="w-3/5 max-w-full mx-auto"
+                alt="Green Outdoor Jacket"
+              />
             </div>
             <h3 class="text-2xl font-semibold">Eco-Friendly Green Jacket</h3>
-            <p class="text-lg text-gray-700">Designed for adventurers, this jacket combines durability and environmental consciousness with cutting-edge technology.</p>
+            <p class="text-lg text-gray-700">
+              Designed for adventurers, this jacket combines durability and
+              environmental consciousness with cutting-edge technology.
+            </p>
             <div class="flex justify-between items-center">
               <h3 class="font-black text-3xl text-orange-400">$279</h3>
-              <button class="py-3 px-6 rounded-full uppercase text-white bg-gradient-to-r from-green-700 via-purple-600 to-pink-500 font-semibold">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-6 h-6 inline">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"/>
-                </svg> Buy Now
+              <button
+                class="py-3 px-6 rounded-full uppercase text-white bg-gradient-to-r from-green-700 via-purple-600 to-pink-500 font-semibold"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="3"
+                  stroke="currentColor"
+                  class="w-6 h-6 inline"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                  />
+                </svg>
+                Buy Now
               </button>
             </div>
           </div>
-        
-          <!-- Third Product Box -->
-          <div class="space-y-2 shadow-xl p-5 border border-gray-300 rounded-lg hover:shadow-2xl transition-shadow duration-300">
+
+          <div
+            class="space-y-2 shadow-xl p-5 border border-gray-300 rounded-lg hover:shadow-2xl transition-shadow duration-300"
+          >
             <div class="bg-gray-100 py-4 rounded-lg">
-              <img src="images/jacket-3.png" class="w-3/5 max-w-full mx-auto" alt="Black Urban Jacket" />
+              <img
+                src="images/jacket-3.png"
+                class="w-3/5 max-w-full mx-auto"
+                alt="Black Urban Jacket"
+              />
             </div>
             <h3 class="text-2xl font-semibold">Urban Black Jacket</h3>
-            <p class="text-lg text-gray-700">A sleek black jacket for urban life. Stay trendy and comfortable with this fashion-forward piece, perfect for the city streets.</p>
+            <p class="text-lg text-gray-700">
+              A sleek black jacket for urban life. Stay trendy and comfortable
+              with this fashion-forward piece, perfect for the city streets.
+            </p>
             <div class="flex justify-between items-center">
               <h3 class="font-black text-3xl text-orange-400">$299</h3>
-              <button class="py-3 px-6 rounded-full uppercase text-white bg-gradient-to-r from-green-700 via-purple-600 to-pink-500 font-semibold">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-6 h-6 inline">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"/>
-                </svg> Buy Now
+              <button
+                class="py-3 px-6 rounded-full uppercase text-white bg-gradient-to-r from-green-700 via-purple-600 to-pink-500 font-semibold"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="3"
+                  stroke="currentColor"
+                  class="w-6 h-6 inline"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                  />
+                </svg>
+                Buy Now
               </button>
             </div>
           </div>
-      </div>
-        
-
+        </div>
       </section>
 
-      <section class="my-14 max-w-7xl mx-auto  p-5 rounded-xl">
+         <section class="my-14 max-w-7xl mx-auto  p-5 rounded-xl">
         <h1 class="text-4xl font-bold mb-8 text-center md:text-left ">
             Men Jacket Collection
         </h1>
     
         <div class="grid gap-7 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-            <!-- First Jacket -->
+
             <div class="space-y-3 shadow-2xl p-5 bg-white rounded-xl transform transition duration-300 hover:scale-105">
                 <div class="rounded-lg overflow-hidden block ">
-                    <img class="w-2/3 mx-auto transition duration-500 hover:opacity-80 " src="images/jacket-4.png" alt="Snowboard Jacket Mens" />
+                    <img class="w-2/3 mx-auto transition duration-500 hover:scale-105 hover:opacity-80 " src="images/jacket-4.png" alt="Snowboard Jacket Mens" />
                 </div>
                 <h2 class="font-semibold text-2xl text-gray-800">Snowboard Jacket Mens</h2>
                 <p class="text-gray-600">Perfect for snowy adventures, this jacket ensures warmth and style!</p>
@@ -808,7 +1128,7 @@
                 </div>
             </div>
     
-            <!-- Repeat for other jackets with similar enhancements -->
+           
             <div class="space-y-3 shadow-2xl p-5 bg-white rounded-xl transform transition duration-300 hover:scale-105">
                 <div class="rounded-lg overflow-hidden">
                     <img class="w-2/3 mx-auto transition duration-500 hover:opacity-80" src="images/jacket-5.png" alt="Snowboard Jacket Mens" />
@@ -874,8 +1194,7 @@
       
 
 
-
-
+            
       <section class="my-14">
 
         <div class="mt-4 max-w-6xl mx-auto">
@@ -883,22 +1202,22 @@
             <div class="md:w-1/2 flex flex-col gap-6 items-center justify-center">
               <h3 class="font-bold capitalize tracking-widest text-3xl">armani-casa</h3>
               <p class="text-xl font-semibold tracking-wider">LIVING IN ELEGANCE AND STYLE</p>
-              <button class=" border border-black border-opacity-20 px-14 py-1 text-gray-400 text-center bg-white "><a href="#">Discover The Collection</a></button>
+              <button class=" border-b-4 border-black border-opacity-10 px-14 py-3  text-gray-400 text-center bg-white "><a href="#">Discover The Collection</a></button>
             </div>
   
             <div class="md:w-1/2 px-2 md:px-0 mt-4 md:mt-0">
-              <video controls class="w-full rounded-xl" autoplay muted src="images/aesthetic.mp4" ></video>
+              <video  class="w-full rounded-xl" autoplay muted   src="images/aesthetic.mp4" ></video>
             </div>
           </div>
         </div>
 
 
 
-        <!-- Overall Div -->
+
         <div class="grid mt-10 grid-cols-1 md:grid-cols-2 max-w-5xl mx-auto gap-10 md:gap-5 items-center">
           <div class="space-y-5">
-            <!-- Card 1 -->
-            <div class="flex gap-4 shadow-lg p-4 md:p-5 items-center rounded-lg transform transition duration-300 hover:scale-102 hover:shadow-xl">
+        
+            <div class="flex gap-4 shadow-lg p-4 md:p-5 items-center rounded-lg  transition duration-300 hover:scale-102 hover:shadow-xl">
               <div class="h-16 w-16 bg-gray-200 p-2 rounded-full flex justify-center items-center">
                 <img src="images/icons/house.png" class="w-full" alt="Perfect Fit Icon" />
               </div>
@@ -908,7 +1227,7 @@
               </div>
             </div>
         
-            <!-- Card 2 -->
+       
             <div class="flex gap-4 shadow-lg p-4 md:p-5 items-center rounded-lg transform transition duration-300 hover:scale-102 hover:shadow-xl">
               <div class="w-16 h-16 bg-gray-200 p-2 rounded-full flex justify-center items-center">
                 <img src="images/icons/box.png" class="w-full" alt="Free Exchanges Icon" />
@@ -919,7 +1238,7 @@
               </div>
             </div>
         
-            <!-- Card 3 -->
+         
             <div class="flex gap-4 shadow-lg p-4 md:p-5 items-center rounded-lg transform transition duration-300 hover:scale-102 hover:shadow-xl">
               <div class="w-16 h-16 bg-gray-200 p-2 rounded-full flex justify-center items-center">
                 <img src="images/icons/question.png" class="w-full" alt="Contact Seller Icon" />
@@ -931,8 +1250,8 @@
             </div>
           </div>
         
-          <!-- Image Section -->
-          <div class="flex justify-center items-center">
+   
+          <div class="flex justify-center items-center border">
             <img src="images/shopping.png" class="rounded-lg shadow-lg transform transition duration-300 hover:shadow-xl w-full md:w-auto" alt="Shopping Image" />
           </div>
         </div>
@@ -941,8 +1260,8 @@
 
         <div class="rounded-lg shadow-lg my-10 max-w-[1440px] w-[80%] mx-auto flex flex-row">
           
-          <div class="lg:w-3/5 w-full  text-gray-100 p-12 bg-gradient-to-r from-black to-purple-900 lg:from-black lg:via-purple-900 lg:to-white rounded-lg ">
-            <div class="lg:w-1/2">
+          <div class="lg:w-3/5 w-full  text-gray-100 p-12 bg-gradient-to-r from-black to-purple-900 lg:from-black gap-5 lg:via-purple-900 lg:to-white rounded-lg ">
+            <div class="lg:w-2/3">
               <h3 class="text-2xl font-extrabold leading-relaxed mb-4">Subscribe To Get Our Offers first</h3>
               <p>Fashion is more than just clothing; it's a reflection of identity, creativity, and culture. From timeless classics to bold trends, fashion has the power to express who we are without saying a word....</p>
               <div class="mt-4">
@@ -952,26 +1271,30 @@
             </div>
           </div>
 
-          <div class="lg:w-2/5 w-full lg:flex lg:flex-row hidden">
-            <img src="images/handome.jpg" class="h-full" alt="">
+          <div class="lg:w-1/2  w-full  lg:flex lg:flex-row hidden">
+            <img src="images/handome.jpg" class="w-full" alt="">
           </div>
 
         </div>
       </section>
 
+
+
+
       <!-- Newsletter Section -->
-       <div class="pb-10">
+          <div class="pb-10">
         <h3 class="text-center font-bold text-2xl mb-4">Subscribe To Our NewsLetter</h3>
         <div class="flex justify-center items-center">
           <input type="email" class="border-t-0 md:w-72 border-x-0 border-b-2" required placeholder="Enter Your Email">
-          <a href="#" class="bg-black text-white py-2 px-5">Subscribe</a>
+          <a href="#" class="bg-black text-white py-2 px-5 rounded-r-lg">Subscribe</a>
         </div>
        </div>
 
+
     </main>
+    <!-- 
 
-
-    <footer class="bg-white rounded-t-lg shadow dark:bg-gray-900">
+    <footer class="bg-white  shadow dark:bg-gray-900">
       <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
         <div class="sm:flex sm:items-center sm:justify-between">
           <a
@@ -1017,7 +1340,7 @@
           All Rights Reserved.</span
         >
       </div>
-    </footer>
+    </footer> -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
   </body>
